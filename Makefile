@@ -5,3 +5,7 @@ coolc:
 
 spim:
 	/home/grad/ccomp/11/pedro.caldeira/students/compilers/bin/spim -file stack.s
+
+example:
+	/home/grad/ccomp/11/pedro.caldeira/students/compilers/bin/coolc readyStack.cl atoi.cl -o readyStack.s
+	/home/grad/ccomp/11/pedro.caldeira/students/compilers/bin/spim readyStack.s

@@ -1,9 +1,16 @@
-class Stack inherits IO {
-    stackList : List;
+class Stack {
+    stackElement : Element;
+    numberOfItems : Int;
 
-    push(obj : String) {
+    isNil() : Bool { { abort(); true; } }
+
+    getstackList() : List {
+            self.stackList;
+    }
+
+    push(item : String) : List {
         {
-            stackList <- 
+            
         }
     }
 }
