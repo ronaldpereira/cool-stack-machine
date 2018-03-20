@@ -1,21 +1,45 @@
+class StackElement {
+    element: String;
+    nextStackElement: StackElement;
+
+    init (elem: String) : Object {
+        element <- elem
+    };
+
+    getElement() : String {
+        element
+    };
+
+    getNextstackElement() : StackElement {
+        nextStackElement
+    };
+
+    pushToStack(elem: StackElement) : Object {
+        nextStackElement <- elem
+    };
+};
+
 class Stack {
-    stackElement : Element;
-    numberOfItems : Int;
+    numberItems: Int;
+    head: StackElement;
+    tail: StackElement;
 
-    isNil() : Bool { { abort(); true; } }
+    getnumberItems() : Int {
+        numberItems
+    };
 
-    getstackList() : List {
-            self.stackList;
-    }
+    push(str: String) : Object {{
+        n <- n + 1;
+    }};
 
-    push(item : String) : List {
-        {
-            
-        }
-    }
-}
+    pop() : String {{
+        n <- n - 1;
+    }}
+};
 
 class Main inherits IO {
+    charToIntegerConverter: A2I; -- Gets the A2I library object
+
 
    main() : Object {
       out_string("Nothing implemented\n")
